@@ -36,6 +36,8 @@
 |              | Livox Mid70                                       |
 |              | USB转TTL                                          |
 
+MindVision相机驱动下载安装[迈德威视](http://www.mindvision.com.cn/rjxz/list_12.aspx?lcid=138)，[开发demo例程](http://www.mindvision.com.cn/rjxz/list_12.aspx?lcid=139)
+
 Anaconda所需要的库请使用下列命令进行安装
 
 ```shell
@@ -69,7 +71,20 @@ ROS Melodic安装参见[ROS Melodic](https://blog.csdn.net/haiyinshushe/article/
 | main_l.sh | 先加载ROS环境（可选），再加载conda环境，再启动main_l.py脚本  |
 | start.sh  | 包含加载devel/start.bash以及roslaunch两个过程                |
 
+#### 相机配置文件
+
+配置文件中camera后编号即对应程序中相机编号（camera_type) 0为右相机，1为左相机，2为上相机
+
+##### Config文件
+
+该文件由MindVison Windows demo程序生成
+
+#####yaml文件
+
+yaml文件中保存相机标定参数,请标定后填入该文件（K_0为内参，C_0为畸变系数，E_0为雷达到相机外参）
+
 ### 五、文件目录
+
 ```
 LCR_sjtu
 │  .gitignore 
