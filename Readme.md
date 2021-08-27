@@ -81,7 +81,7 @@ ROS Melodic安装参见[ROS Melodic](https://blog.csdn.net/haiyinshushe/article/
 
 ##### yaml文件
 
-yaml文件中保存相机标定参数,请标定后填入该文件（K_0为内参，C_0为畸变系数，E_0为雷达到
+yaml文件中保存相机标定参数,请标定后填入该文件（K_0为内参，C_0为畸变系数，E_0为雷达到相机外参）
 
 ### 五、文件目录
 
