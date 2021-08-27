@@ -21,7 +21,7 @@
 
 - 飞镖预警
 
-<img src=doc_imgs\UI.jpg" alt="UI" style="zoom: 67%;" />
+<img src="doc_imgs\UI.jpg" alt="missile" style="zoom:67%;" />
 
 - 我们demo的测试视频放在了b站上，以便大小熟悉我们雷达站测试的使用，附有讲解
 - 由于加入了两个相机，以及预测经过了两层yolov5s量级的网络，我们雷达站帧率在5-10帧左右，对于小地图通信频率是适应的，但对于更高的实时性要求便有逊色，待后续进行优化。
@@ -81,7 +81,7 @@ ROS Melodic安装参见[ROS Melodic](https://blog.csdn.net/haiyinshushe/article/
 
 #####yaml文件
 
-yaml文件中保存相机标定参数,请标定后填入该文件（K_0为内参，C_0为畸变系数，E_0为雷达到相机外参）
+yaml文件中保存相机标定参数,请标定后填入该文件（K_0为内参，C_0为畸变系数，E_0为雷达到
 
 ### 五、文件目录
 
@@ -161,9 +161,8 @@ LCR_sjtu
 #### 雷达深度图
 
 基于以下公式，基于雷达和相机标定关系，将点云投影到相机平面，形成深度图。并使用队列进行点云在一段时间内的积分(更新公式如下，即取二者最小值）。
-$$
-z_{c} \left[ \begin{matrix} u  \\ v \\ 1  \end{matrix} \right] = K_{c}\left[ \begin{matrix} R_{l}^{c}  & t_{l}^{c}   \end{matrix} \right]\left[\begin{matrix} x_l  \\ y_l \\ z_l \\ 1  \end{matrix}\right] \quad \quad D(u,v) := \min\{z_c,D(u,v)\}
-$$
+
+<img src="https://latex.codecogs.com/svg.image?z_{c}&space;\left[&space;\begin{matrix}&space;u&space;&space;\\&space;v&space;\\&space;1&space;&space;\end{matrix}&space;\right]&space;=&space;K_{c}\left[&space;\begin{matrix}&space;R_{l}^{c}&space;&space;&&space;t_{l}^{c}&space;&space;&space;\end{matrix}&space;\right]\left[\begin{matrix}&space;x_l&space;&space;\\&space;y_l&space;\\&space;z_l&space;\\&space;1&space;&space;\end{matrix}\right]&space;\quad&space;\quad&space;D(u,v)&space;:=&space;\min\{z_c,D(u,v)\}" title="z_{c} \left[ \begin{matrix} u \\ v \\ 1 \end{matrix} \right] = K_{c}\left[ \begin{matrix} R_{l}^{c} & t_{l}^{c} \end{matrix} \right]\left[\begin{matrix} x_l \\ y_l \\ z_l \\ 1 \end{matrix}\right] \quad \quad D(u,v) := \min\{z_c,D(u,v)\}" />
 
 #### 信息融合定位
 
