@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1351</width>
+    <height>972</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Radar UI</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0">
+      <item>
+       <layout class="QGridLayout" name="left" rowstretch="7,1">
+        <property name="leftMargin">
+         <number>5</number>
+        </property>
+        <property name="topMargin">
+         <number>5</number>
+        </property>
+        <property name="rightMargin">
+         <number>5</number>
+        </property>
+        <property name="bottomMargin">
+         <number>5</number>
+        </property>
+        <property name="spacing">
+         <number>10</number>
+        </property>
+        <item row="0" column="0" colspan="7">
+         <widget class="QLabel" name="main_demo">
+          <property name="minimumSize">
+           <size>
+            <width>960</width>
+            <height>540</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>main_demo</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="6">
+         <widget class="QLabel" name="message_box">
+          <property name="minimumSize">
+           <size>
+            <width>320</width>
+            <height>280</height>
+           </size>
+          </property>
+          <property name="midLineWidth">
+           <number>3</number>
+          </property>
+          <property name="text">
+           <string>message_box</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="6">
+         <widget class="QLabel" name="feed_back">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>320</width>
+            <height>280</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>feed_back</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="right" stretch="0,1,1,1,1">
+        <property name="spacing">
+         <number>10</number>
+        </property>
+        <property name="leftMargin">
+         <number>5</number>
+        </property>
+        <property name="topMargin">
+         <number>5</number>
+        </property>
+        <property name="rightMargin">
+         <number>5</number>
+        </property>
+        <property name="bottomMargin">
+         <number>5</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="map">
+          <property name="minimumSize">
+           <size>
+            <width>320</width>
+            <height>718</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>320</width>
+            <height>718</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="text">
+           <string>map</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn1">
+          <property name="minimumSize">
+           <size>
+            <width>115</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>btn1</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn2">
+          <property name="minimumSize">
+           <size>
+            <width>115</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>btn2</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn3">
+          <property name="minimumSize">
+           <size>
+            <width>115</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>btn3</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn4">
+          <property name="minimumSize">
+           <size>
+            <width>115</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>btn4</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1351</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn1</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btn1_on_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1076</x>
+     <y>799</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>599</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btn2_on_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1186</x>
+     <y>844</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>575</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btn3_on_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1319</x>
+     <y>889</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>8</x>
+     <y>542</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn4</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btn4_on_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1335</x>
+     <y>934</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>6</x>
+     <y>508</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>btn1_on_clicked()</slot>
+  <slot>btn2_on_clicked()</slot>
+  <slot>btn3_on_clicked()</slot>
+  <slot>btn4_on_clicked()</slot>
+  <slot>btn1_pressed()</slot>
+ </slots>
+</ui>
+
+

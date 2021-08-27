@@ -1,0 +1,8 @@
+# pip install -r requirements.txt
+# If you only run the demo, you can just install the follow package
+numpy
+opencv-python
+PyQt5
+pexpect
+pyserial
+pyyaml
