@@ -167,9 +167,7 @@ LCR_sjtu
 #### 信息融合定位
 
 基于以下公式，对装甲板框所确定的深度图ROI取均值，作为框中心点的相机坐标系z坐标值，并转换到世界坐标系
-$$
-\hat z_{c} = \frac{1}{N_{ROI}}\sum_{ROI}D(u,v) \quad \quad  \left[\begin{matrix} \hat x  \\ \hat y \\ \hat z  \end{matrix}\right] = \left[\begin{matrix} R_c^w & t_c^w  \end{matrix}\right] \left[\begin{matrix}{\hat z_c \cdot K_c^{-1} \left[\begin{matrix} u_{center}  \\ v_{center} \\ 1 \end{matrix}\right]} \\ 1\end{matrix}\right]
-$$
+<img src="https://latex.codecogs.com/svg.image?\hat&space;z_{c}&space;=&space;\frac{1}{N_{ROI}}\sum_{ROI}D(u,v)&space;\quad&space;\quad&space;&space;\left[\begin{matrix}&space;\hat&space;x&space;&space;\\&space;\hat&space;y&space;\\&space;\hat&space;z&space;&space;\end{matrix}\right]&space;=&space;\left[\begin{matrix}&space;R_c^w&space;&&space;t_c^w&space;&space;\end{matrix}\right]&space;\left[\begin{matrix}{\hat&space;z_c&space;\cdot&space;K_c^{-1}&space;\left[\begin{matrix}&space;u_{center}&space;&space;\\&space;v_{center}&space;\\&space;1&space;\end{matrix}\right]}&space;\\&space;1\end{matrix}\right]" title="\hat z_{c} = \frac{1}{N_{ROI}}\sum_{ROI}D(u,v) \quad \quad \left[\begin{matrix} \hat x \\ \hat y \\ \hat z \end{matrix}\right] = \left[\begin{matrix} R_c^w & t_c^w \end{matrix}\right] \left[\begin{matrix}{\hat z_c \cdot K_c^{-1} \left[\begin{matrix} u_{center} \\ v_{center} \\ 1 \end{matrix}\right]} \\ 1\end{matrix}\right]" />
 
 ### 八、程序架构
 
