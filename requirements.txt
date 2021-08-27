@@ -1,8 +1,8 @@
 # pip install -r requirements.txt
 # If you only run the demo, you can just install the follow package
 numpy
-opencv-python
-PyQt5
+opencv-python==4.1.2.30
+PyQt5==5.15.2
 pexpect
 pyserial
 pyyaml

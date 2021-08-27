@@ -251,6 +251,7 @@ fabric.properties
 *.mvdat
 !doc_imgs/*
 demo_resource/*
+*.zip
 
 
 

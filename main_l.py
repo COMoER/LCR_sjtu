@@ -491,7 +491,7 @@ if __name__ == "__main__":
 
     # assert os.path.exists('/media/sjtu/DISK/'), "DISK NOT LOAD" # 外加载硬盘存在检查，若你未用外挂载硬盘可以删去
 
-    ###### 串口通信设置，你如果暂时不用串口通信，可以将它们注释掉，且该模块只能在linux下运行########
+    ###### TODO:串口通信设置，你如果暂时不用串口通信，可以将它们注释掉，且该模块只能在linux下运行########
     # password = 'radar'
     # ch = pexpect.spawn('sudo chmod 777 {}'.format(usb))
     # ch.sendline(password)
