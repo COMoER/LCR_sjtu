@@ -23,7 +23,7 @@
 
 <img src="doc_imgs\UI.jpg" alt="missile" style="zoom:67%;" />
 
-- 我们demo的测试视频放在了b站上[视频演示](https://www.bilibili.com/video/BV1FM4y1579H/)，以便大小熟悉我们雷达站测试的使用，附有讲解
+- 我们demo的测试视频放在了b站上[视频演示](https://www.bilibili.com/video/BV1FM4y1579H/)，以便大家熟悉我们雷达站测试的使用，附有讲解
 - 由于加入了两个相机，以及预测经过了两层yolov5s量级的网络，我们雷达站帧率在5-10帧左右，对于小地图通信频率是适应的，但对于更高的实时性要求便有逊色，待后续进行优化。
 
 ### 三、环境配置
@@ -152,7 +152,7 @@ LCR_sjtu
 
 ### 七、雷达定位原理
 
-具体原理详见技术报告，这里为简述
+具体原理详见技术报告[RM2021-上海交通大学-云汉交龙战队-雷达站算法部分开源](https://bbs.robomaster.com/forum.php?mod=viewthread&tid=12239)，这里为简述
 
 #### 神经网络预测
 
