@@ -77,7 +77,7 @@ class HP_scene(object):
                 cv2.putText(self._out_scene, "{0}".format(hp), (170, 56 + 30*i), self._font,
                             0.6, (255, 255, 255), 2)
             if i == 5: # guard
-                hp = HP[i + 8 * (self._enermy)]
+                hp = HP[i + 8 * (not self._enermy)]
                 self._put_hp(hp,self._guard, 60, 42 + 30*i)
                 cv2.putText(self._out_scene, "{0}".format(hp), (170, 56 + 30*i), self._font,
                             0.6, (255, 255, 255), 2)
