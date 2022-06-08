@@ -71,7 +71,7 @@ ROS Melodic安装参见[ROS Melodic](https://blog.csdn.net/haiyinshushe/article/
 | main_l.sh | 先加载ROS环境（可选），再加载conda环境，再启动main_l.py脚本  |
 | start.sh  | 包含加载devel/start.bash以及roslaunch两个过程                |
 
-####神经网络特别说明
+#### 神经网络特别说明
 
 由于我们只提供了神经网络的预测结果，而没有提供神经网络本身（**attention！pkl不是神经网络，而是预测结果的录像**），所以需要用户自行添加神经网络
 
@@ -84,7 +84,7 @@ class Predictor(object):
         :param weights:模型文件路径
         '''
         self.net = Network(weights)
-	def transfer(results):
+    def transfer(results):
         raise NotImplementedError
         return img_preds,car_locations
     def infer(self,imgs):
