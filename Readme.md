@@ -52,6 +52,8 @@ ROS Melodic安装参见[ROS Melodic](https://blog.csdn.net/haiyinshushe/article/
 
 - 启动驱动，可参照我们提供的<b>scripts/start.sh</b>进行快速启动
 
+Livox Mid70 可从DJI官方商城[https://store.dji.com/cn/product/livox-mid-70-lidar](https://store.dji.com/cn/product/livox-mid-70-lidar)购买~这不是广告~
+
 ### 四、程序使用
 
 #### demo运行方式
